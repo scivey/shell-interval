@@ -1,0 +1,24 @@
+{
+  "name": "shell-interval",
+  "version": "1.0.0",
+  "description": "setInterval for the command line, with an option to stop after N repetitions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shell",
+    "every",
+    "interval",
+    "command",
+    "execute",
+    "watch",
+    "watcher"
+  ],
+  "author": "Scott Ivey",
+  "license": "MIT",
+  "dependencies": {
+    "argparse": "~0.1.15",
+    "lodash": "~1.3.1"
+  }
+}
