@@ -1,10 +1,22 @@
 {
   "name": "shell-interval",
   "version": "1.0.0",
+  "author": {
+    "name": "Scott Ivey",
+    "email": "scott.ivey@gmail.com",
+    "url": "https://github.com/scivey"
+    },
   "description": "setInterval for the command line, with an option to stop after N repetitions.",
   "main": "index.js",
+  "bin": {
+    "shell-interval": "./bin/cmd.js"
+  },
   "scripts": {
     "test": "mocha ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scivey/shell-interval"
   },
   "keywords": [
     "shell",
@@ -13,9 +25,11 @@
     "command",
     "execute",
     "watch",
-    "watcher"
+    "watcher",
+    "command",
+    "cli"
   ],
-  "author": "Scott Ivey",
+  "preferGlobal": true,
   "license": "MIT",
   "dependencies": {
     "argparse": "~0.1.15",

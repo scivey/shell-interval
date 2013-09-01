@@ -97,13 +97,16 @@ var ShellInterval = function(params) {
 	// if --reps wasn't passed, we just create an interval that cycles forever.
 	
 	this.start = function() {
-		if (options.eager) runShellCommand(options.command, shellCallback);
+		if (options.eager) {
+			runShellCommand(options.command, shellCallback);
+		}
 		if (! options.reps) {
 			//console.log("noreps");
 			rtData.intervalId = setInterval(runShellCommand, interval, options.command, shellCallback);
 		} else {
 				//console.log("reps");
 				rtData.repsInvoked = 0;
+				if (options.eager) rtData.repsInvoked += 1; //compensate for initial execution
 				rtData.intervalId = setInterval( function() {
 					runShellCommand(options.command, shellCallback);
 					rtData.repsInvoked += 1;

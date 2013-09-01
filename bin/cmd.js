@@ -1,4 +1,4 @@
-
+#!/usr/bin/env node
 var shellInterval = require('../index.js');
 var ArgumentParser = require("argparse").ArgumentParser;
 var parser = new ArgumentParser({
