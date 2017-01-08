@@ -191,7 +191,7 @@ npm install -g shell-interval
 ```
 
 ## Testing
-The specs depend on [Sinon](http://sinonjs.org/) and [Mocha](http://visionmedia.github.io/mocha/).  Both are included in the devDependencies of package.json.
+The specs depend on [Sinon](http://sinonjs.org/) and [Mocha](http://mochajs.org/).  Both are included in the devDependencies of package.json.
 
 ```
 npm test
